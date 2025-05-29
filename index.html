@@ -451,6 +451,208 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="qa-item">
+                <div class="question">אילו כלים חיוניים ל-DevSecOps Engineer?</div>
+                <div class="answer">
+                    <h4>כלים מרכזיים:</h4>
+                    <div class="tech-list">
+                        <div class="tech-card">
+                            <h3>SAST Tools</h3>
+                            <ul>
+                                <li>SonarQube</li>
+                                <li>Fortify</li>
+                                <li>Checkmarx</li>
+                                <li>Semgrep</li>
+                            </ul>
+                        </div>
+                        <div class="tech-card">
+                            <h3>DAST Tools</h3>
+                            <ul>
+                                <li>OWASP ZAP</li>
+                                <li>Burp Suite</li>
+                                <li>Acunetix</li>
+                                <li>Nessus</li>
+                            </ul>
+                        </div>
+                        <div class="tech-card">
+                            <h3>Container Security</h3>
+                            <ul>
+                                <li>Trivy</li>
+                                <li>Clair</li>
+                                <li>Anchore</li>
+                                <li>Falco</li>
+                            </ul>
+                        </div>
+                        <div class="tech-card">
+                            <h3>Secrets Management</h3>
+                            <ul>
+                                <li>HashiCorp Vault</li>
+                                <li>AWS Secrets Manager</li>
+                                <li>Azure Key Vault</li>
+                                <li>GitGuardian</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="question">איך משלבים אבטחה ב-CI/CD Pipeline?</div>
+                <div class="answer">
+                    <h4>שלבים מרכזיים:</h4>
+                    <div class="concept-box">
+                        <div class="concept-title">שלב 1: בדיקות קוד</div>
+                        <ul>
+                            <li>SAST - סריקת קוד סטטית</li>
+                            <li>SCA - בדיקת תלויות</li>
+                            <li>Secrets scanning</li>
+                            <li>License compliance</li>
+                        </ul>
+                    </div>
+                    <div class="concept-box">
+                        <div class="concept-title">שלב 2: בדיקות תשתית</div>
+                        <ul>
+                            <li>IaC scanning</li>
+                            <li>Container scanning</li>
+                            <li>Cloud configuration checks</li>
+                            <li>Policy validation</li>
+                        </ul>
+                    </div>
+                    <div class="concept-box">
+                        <div class="concept-title">שלב 3: בדיקות דינמיות</div>
+                        <ul>
+                            <li>DAST - סריקות אפליקציה</li>
+                            <li>API security testing</li>
+                            <li>Penetration testing</li>
+                            <li>Load testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="question">איך מתמודדים עם אבטחת מיקרו-שירותים?</div>
+                <div class="answer">
+                    <h4>אסטרטגיות אבטחה:</h4>
+                    <ul>
+                        <li><strong>Service Mesh:</strong> שימוש ב-Istio או Linkerd לניהול תעבורה מאובטח</li>
+                        <li><strong>API Gateway:</strong> נקודת כניסה מאובטחת עם WAF ו-rate limiting</li>
+                        <li><strong>Zero Trust:</strong> אימות והרשאה לכל בקשה</li>
+                        <li><strong>Container Security:</strong> סריקת images וניטור בזמן ריצה</li>
+                        <li><strong>Secret Management:</strong> ניהול מרכזי של credentials</li>
+                        <li><strong>Network Policies:</strong> הגבלת תקשורת בין שירותים</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="question">איך מבטיחים אבטחת שרשרת אספקה (Supply Chain Security)?</div>
+                <div class="answer">
+                    <h4>כלים ומתודולוגיות:</h4>
+                    <div class="tech-list">
+                        <div class="tech-card">
+                            <h3>חתימה ואימות</h3>
+                            <ul>
+                                <li>Sigstore - חתימה ואימות קוד</li>
+                                <li>SLSA Framework - תקנים לאבטחת שרשרת אספקה</li>
+                                <li>Tekton Chains - אבטחת שרשרת אספקה ב-Kubernetes</li>
+                            </ul>
+                        </div>
+                        <div class="tech-card">
+                            <h3>ניהול תלויות</h3>
+                            <ul>
+                                <li>Snyk - זיהוי ותיקון פגיעויות</li>
+                                <li>Dependabot - עדכונים אוטומטיים</li>
+                                <li>CycloneDX - מעקב אחר תלויות</li>
+                            </ul>
+                        </div>
+                        <div class="tech-card">
+                            <h3>סריקת קוד</h3>
+                            <ul>
+                                <li>Semgrep - ניתוח סטטי מתקדם</li>
+                                <li>CodeQL - מנוע ניתוח סמנטי</li>
+                                <li>SonarQube - ניתוח איכות קוד</li>
+                            </ul>
+                        </div>
+                        <div class="tech-card">
+                            <h3>ניהול סודות</h3>
+                            <ul>
+                                <li>HashiCorp Vault - ניהול מרכזי של סודות</li>
+                                <li>Mozilla SOPS - הצפנת קבצי YAML/JSON</li>
+                                <li>Sealed Secrets - הצפנת סודות ב-Kubernetes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="question">איך מיישמים Shift-Left Security?</div>
+                <div class="answer">
+                    <h4>שלבים מרכזיים:</h4>
+                    <div class="concept-box">
+                        <div class="concept-title">שלב 1: תכנון ופיתוח</div>
+                        <ul>
+                            <li>Threat Modeling מוקדם</li>
+                            <li>Pre-Commit Hooks (Git-Secrets)</li>
+                            <li>IDE Plugins (SonarLint)</li>
+                            <li>Code Review Guidelines</li>
+                        </ul>
+                    </div>
+                    <div class="concept-box">
+                        <div class="concept-title">שלב 2: אוטומציה</div>
+                        <ul>
+                            <li>CI/CD Pipeline Security</li>
+                            <li>Automated Testing</li>
+                            <li>Policy as Code</li>
+                            <li>Compliance Checks</li>
+                        </ul>
+                    </div>
+                    <div class="concept-box">
+                        <div class="concept-title">שלב 3: ניטור ותגובה</div>
+                        <ul>
+                            <li>Runtime Security (Falco)</li>
+                            <li>Vulnerability Management</li>
+                            <li>Incident Response</li>
+                            <li>Continuous Monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa-item">
+                <div class="question">איך מתמודדים עם אבטחת תשתית כקוד (IaC)?</div>
+                <div class="answer">
+                    <h4>כלים ומתודולוגיות:</h4>
+                    <div class="tech-list">
+                        <div class="tech-card">
+                            <h3>סריקת תצורה</h3>
+                            <ul>
+                                <li>Checkov - סריקת תבניות IaC</li>
+                                <li>Terrascan - ניתוח סטטי לתשתית</li>
+                                <li>tfsec - סורק אבטחה ל-Terraform</li>
+                            </ul>
+                        </div>
+                        <div class="tech-card">
+                            <h3>אכיפת מדיניות</h3>
+                            <ul>
+                                <li>Open Policy Agent (OPA)</li>
+                                <li>Kyverno - ניהול מדיניות ב-Kubernetes</li>
+                                <li>Conftest - בדיקת תצורה</li>
+                            </ul>
+                        </div>
+                        <div class="tech-card">
+                            <h3>ניטור ותגובה</h3>
+                            <ul>
+                                <li>Falco - אבטחת זמן ריצה</li>
+                                <li>Kubescape - סריקת אבטחה ל-Kubernetes</li>
+                                <li>Kube-Bench - בדיקת תצורה מול CIS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Behavioral Questions Section -->
@@ -639,6 +841,15 @@
                     <li><strong>AWS Well-Architected:</strong> עקרונות אדריכלות בענן</li>
                     <li><strong>OWASP Top 10:</strong> פרצות אבטחה נפוצות</li>
                     <li><strong>DevSecOps.org:</strong> קהילה ומשאבים</li>
+                    <li><strong>HashiCorp Learn:</strong> <a href="https://learn.hashicorp.com/" target="_blank">מדריכים על Vault, Terraform ו-Terraform Cloud</a></li>
+                    <li><strong>Kubernetes Security:</strong> <a href="https://kubernetes.io/docs/concepts/security/" target="_blank">מדריך אבטחה רשמי של Kubernetes</a></li>
+                    <li><strong>GitLab Security:</strong> <a href="https://docs.gitlab.com/ee/security/" target="_blank">תיעוד אבטחה של GitLab</a></li>
+                    <li><strong>GitHub Security:</strong> <a href="https://docs.github.com/en/security" target="_blank">מדריך אבטחה של GitHub</a></li>
+                    <li><strong>Docker Security:</strong> <a href="https://docs.docker.com/engine/security/" target="_blank">תיעוד אבטחה של Docker</a></li>
+                    <li><strong>CNCF Security:</strong> <a href="https://www.cncf.io/projects/security/" target="_blank">פרויקטים וכלים לאבטחת ענן</a></li>
+                    <li><strong>Cloud Security Alliance:</strong> <a href="https://cloudsecurityalliance.org/" target="_blank">משאבים וכלים לאבטחת ענן</a></li>
+                    <li><strong>MITRE ATT&CK:</strong> <a href="https://attack.mitre.org/" target="_blank">מאגר טקטיקות וטכניקות תקיפה</a></li>
+                    <li><strong>NIST Cybersecurity Framework:</strong> <a href="https://www.nist.gov/cyberframework" target="_blank">מסגרת אבטחת סייבר לאומית</a></li>
                 </ul>
             </div>
         </div>
@@ -800,138 +1011,110 @@
                 });
             });
 
-            // Add search functionality
-            const searchContainer = document.createElement('div');
-            searchContainer.innerHTML = `
-                <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
-                    <input type="text" id="searchInput" placeholder="חיפוש..." 
-                           style="padding: 10px; border-radius: 20px; border: 2px solid #667eea; 
-                                  background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
-                </div>
-            `;
-            document.body.appendChild(searchContainer);
-
-            // Search functionality
-            const searchInput = document.getElementById('searchInput');
-            searchInput.addEventListener('input', function() {
-                const searchTerm = this.value.toLowerCase();
-                const allText = document.querySelectorAll('.qa-item, .concept-box, .tip-box');
-                
-                allText.forEach(element => {
-                    const text = element.textContent.toLowerCase();
-                    if (text.includes(searchTerm) || searchTerm === '') {
-                        element.style.display = 'block';
-                        element.style.opacity = '1';
-                    } else {
-                        element.style.opacity = '0.3';
+            // Add keyboard shortcuts
+            document.addEventListener('keydown', function(e) {
+                if (e.ctrlKey || e.metaKey) {
+                    switch(e.key) {
+                        case '1':
+                            e.preventDefault();
+                            showSection('overview');
+                            break;
+                        case '2':
+                            e.preventDefault();
+                            showSection('concepts');
+                            break;
+                        case '3':
+                            e.preventDefault();
+                            showSection('technical');
+                            break;
+                        case '4':
+                            e.preventDefault();
+                            showSection('behavioral');
+                            break;
+                        case '5':
+                            e.preventDefault();
+                            showSection('fiverr');
+                            break;
+                        case '6':
+                            e.preventDefault();
+                            showSection('tips');
+                            break;
+                        case '7':
+                            e.preventDefault();
+                            showSection('resources');
+                            break;
                     }
-                });
-            });
-        });
-
-        // Add keyboard shortcuts
-        document.addEventListener('keydown', function(e) {
-            if (e.ctrlKey || e.metaKey) {
-                switch(e.key) {
-                    case '1':
-                        e.preventDefault();
-                        showSection('overview');
-                        break;
-                    case '2':
-                        e.preventDefault();
-                        showSection('concepts');
-                        break;
-                    case '3':
-                        e.preventDefault();
-                        showSection('technical');
-                        break;
-                    case '4':
-                        e.preventDefault();
-                        showSection('behavioral');
-                        break;
-                    case '5':
-                        e.preventDefault();
-                        showSection('fiverr');
-                        break;
-                    case '6':
-                        e.preventDefault();
-                        showSection('tips');
-                        break;
-                    case '7':
-                        e.preventDefault();
-                        showSection('resources');
-                        break;
                 }
+            });
+
+            // Add print functionality
+            function printGuide() {
+                window.print();
             }
-        });
 
-        // Add print functionality
-        function printGuide() {
-            window.print();
-        }
+            // Add export functionality
+            function exportToPDF() {
+                alert('לייצוא ל-PDF, השתמש בתפריט Print של הדפדפן ובחר "Save as PDF"');
+            }
 
-        // Add export functionality
-        function exportToPDF() {
-            alert('לייצוא ל-PDF, השתמש בתפריט Print של הדפדפן ובחר "Save as PDF"');
-        }
+            // Add study timer
+            let studyTime = 0;
+            let timerInterval;
 
-        // Add study timer
-        let studyTime = 0;
-        let timerInterval;
+            function startStudyTimer() {
+                timerInterval = setInterval(() => {
+                    studyTime++;
+                    const minutes = Math.floor(studyTime / 60);
+                    const seconds = studyTime % 60;
+                    console.log(`זמן לימוד: ${minutes}:${seconds.toString().padStart(2, '0')}`);
+                }, 1000);
+            }
 
-        function startStudyTimer() {
-            timerInterval = setInterval(() => {
-                studyTime++;
-                const minutes = Math.floor(studyTime / 60);
-                const seconds = studyTime % 60;
-                console.log(`זמן לימוד: ${minutes}:${seconds.toString().padStart(2, '0')}`);
-            }, 1000);
-        }
+            // Auto-start timer
+            setTimeout(startStudyTimer, 2000);
 
-        // Auto-start timer
-        setTimeout(startStudyTimer, 2000);
+            // Add motivational quotes
+            const quotes = [
+                "אבטחה היא מסע, לא יעד",
+                "הטכנולוgia משתנה, העקרונות נשארים",
+                "אמון נבנה בטיפות ונהרס בדליים",
+                "המתקפה הטובה ביותר היא הגנה טובה",
+                "תמיד תחשוב כמו תוקף"
+            ];
 
-        // Add motivational quotes
-        const quotes = [
-            "אבטחה היא מסע, לא יעד",
-            "הטכנולוgia משתנה, העקרונות נשארים",
-            "אמון נבנה בטיפות ונהרס בדליים",
-            "המתקפה הטובה ביותר היא הגנה טובה",
-            "תמיד תחשוב כמו תוקף"
-        ];
+            function showRandomQuote() {
+                const quote = quotes[Math.floor(Math.random() * quotes.length)];
+                const quoteDiv = document.createElement('div');
+                quoteDiv.innerHTML = `
+                    <div style="position: fixed; bottom: 20px; left: 20px; 
+                               background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                               color: white; padding: 15px 20px; border-radius: 20px;
+                               box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                               z-index: 1000; animation: slideIn 0.5s ease;">
+                        💡 ${quote}
+                    </div>
+                `;
+                document.body.appendChild(quoteDiv);
 
-        function showRandomQuote() {
-            const quote = quotes[Math.floor(Math.random() * quotes.length)];
-            const quoteDiv = document.createElement('div');
-            quoteDiv.innerHTML = `
-                <div style="position: fixed; bottom: 20px; left: 20px; 
-                           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                           color: white; padding: 15px 20px; border-radius: 20px;
-                           box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-                           z-index: 1000; animation: slideIn 0.5s ease;">
-                    💡 ${quote}
-                </div>
+                // Remove after 5 seconds
+                setTimeout(() => {
+                    quoteDiv.remove();
+                }, 5000);
+            }
+
+            // Show quote every 2 minutes
+            setInterval(showRandomQuote, 120000);
+
+            // Add slide-in animation
+            const slideInStyle = document.createElement('style');
+            slideInStyle.textContent = `
+                @keyframes slideIn {
+                    from { transform: translateX(-100%); opacity: 0; }
+                    to { transform: translateX(0); opacity: 1; }
+                }
             `;
-            document.body.appendChild(quoteDiv);
-
-            // Remove after 5 seconds
-            setTimeout(() => {
-                quoteDiv.remove();
-            }, 5000);
-        }
-
-        // Show quote every 2 minutes
-        setInterval(showRandomQuote, 120000);
-
-        // Add slide-in animation
-        const slideInStyle = document.createElement('style');
-        slideInStyle.textContent = `
-            @keyframes slideIn {
-                from { transform: translateX(-100%); opacity: 0; }
-                to { transform: translateX(0); opacity: 1; }
-            }
-        `;
-        document.head.appendChild(slideInStyle);
+            document.head.appendChild(slideInStyle);
+        });
     </script>
 </body>
 </html>
